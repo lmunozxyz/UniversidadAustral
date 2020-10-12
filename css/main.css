@@ -1,0 +1,17 @@
+.jumbotron{
+    background-color: darkcyan;
+    color: white;
+}
+
+
+.card-hotel{
+    flex: 1 150px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.btn-reserva{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
