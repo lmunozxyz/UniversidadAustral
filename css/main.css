@@ -8,7 +8,7 @@
 
 
 .card-hotel{
-    flex: 1 200px;
+    flex: 1 300px;
     padding: 0px;
     margin: 10px;
 }
@@ -18,7 +18,7 @@
 }
 
 .img-card-hospital{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
