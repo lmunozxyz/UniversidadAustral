@@ -13,8 +13,17 @@
     margin: 10px;
 }
 
+.btn-card-bottom{
+    margin-bottom: 10px;
+}
+
+.img-card-hospital{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .btn-reserva{
-    width: 100%;
+    width: 90%;
     left: 0;
     bottom: 0;
 }
