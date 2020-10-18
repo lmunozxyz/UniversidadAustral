@@ -170,7 +170,9 @@
   <div class="card-body">
     <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
     <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
-
+    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" title="Promociones" data-content="Consultá las promociones vigentes.">
+     Promociones
+    </button>
   </div>
   
   <div class="btn-card-bottom text-center">
@@ -455,13 +457,14 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
  
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script>
-  $(document).ready(function() {
-    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="popover"]').popover()
+})
 </script>
 
 
