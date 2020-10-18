@@ -69,24 +69,51 @@
 
       <div class="container">
         
-        <div class="d-flex">
+        <div class="row">
 
-            <div class="col-sm-4">
+          <div class="col-sm-4">
+
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+              
+
+          </div>
+          
+          <div class="col-sm-4">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva" aria-expanded="false" aria-controls="multiCollapse1">¿Dónde puedo reservar?</button>  
+          </div>
+          
+          <div class="col-sm-4">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo pago?</button>  
+
+          </div>
+          
+        </div> 
+
+
+
+
+        <div class="row">
+
+            <div class="col-sm-4 collapse multi-collapse" id="funciona">
+
                 <h3>¿Cómo funciona?</h3>
                 <p>Buscá los hospitales de acuerdo a tu preferencia.</p>
 
             </div>
             
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="reserva">
                 <h3>¿Dónde puedo reservar?</h3>
                 <p>Elegí la ciudad que te interese y luego realizá la reserva con tus datos.</p>    
             </div>
             
-            <div class="col-sm-4">
+            <div class="col-sm-4 collapse multi-collapse" id="pago">
                 <h3>¿Cómo pago?</h3>
                 <p>Utilizá tu tarjeta favorita o PayPal.</p>
             </div>
         </div>
+
+
+
       
         <hr>
 
