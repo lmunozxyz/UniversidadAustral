@@ -127,8 +127,8 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
-      <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
+    <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
 
   </div>
   
@@ -150,8 +150,8 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
-      <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
+    <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
 
   </div>
   
@@ -168,8 +168,8 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
-      <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
+    <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
 
   </div>
   
@@ -186,8 +186,8 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
-      <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
+    <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
 
   </div>
   
@@ -205,9 +205,9 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
+      <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
       <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
-
+ 
   </div>
   
   <div class="btn-card-bottom text-center">
@@ -225,8 +225,8 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
-      <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
+    <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
 
   </div>
   
@@ -243,8 +243,8 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
-      <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
+    <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
 
   </div>
   
@@ -261,8 +261,8 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
-      <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
+    <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
 
   </div>
   
@@ -279,8 +279,8 @@
   <img class="card-img-top" src="img/clinica_biblica.jpg" alt="Hospital">
   
   <div class="card-body">
-      <h5 class="card-title">Hospital Clínica Bíblica</h5>
-      <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
+    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas tienen desayuno gratis.">Hospital Clínica</h5>
+    <p>Hospital ubicado en el corazón de San José y cuenta con el equipo más moderno de la región.</p>
 
   </div>
   
@@ -450,12 +450,20 @@
 
 
 
-
    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+</script>
+
+
   </body>
 </html>
