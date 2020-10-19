@@ -1,13 +1,22 @@
-.jumbotron{
-    background-color: #c8ece1;
+$VerdeHospital: #c8ece1;
+$TituloJumboColor: brown;
 
-    margin-top: 50px;
+@mixin Margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+.jumbotron{
+    background-color: $VerdeHospital;
+    color: $TituloJumboColor;   
+    @include Margenes (50px,0px)
     border-radius: 0;
     margin-bottom: 0;
 }
 
 footer{
-    background-color: #c8ece1;
+    background-color: $VerdeHospital;
+    @include Margenes(20px, 0px)
 }
 
 
