@@ -312,7 +312,7 @@
   </div>
   
   <div class="btn-card-bottom text-center">
-    <button type="button" class="btn btn-outline-success btn-reserva" data-toggle="modal"  data-target="#exampleModal"><span class="oi oi-check"></span> Contacto</button>
+    <button type="button" class="btn btn-outline-success btn-reserva" data-toggle="modal"  data-target="#exampleModal" id="contactoBtn"><span class="oi oi-check"></span> Contactoo</button>
 
     <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal"  data-target="#exampleModal2"><span class="oi oi-pencil"></span> Reservar</button>
 </div>
@@ -410,7 +410,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn btn-outline-success">Enviar</button>
       </div>
     </div>
   </div>
@@ -488,12 +488,46 @@
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+
   $('[data-toggle="popover"]').popover()
 
   $('.carousel').carousel({
   interval: 5000
-})
-})
+  });
+
+  
+  $('#exampleModal').on('show.bs.modal', function(e){
+          
+    $('#contactoBtn').removeClass('btn-outline-success');
+    $('#contactoBtn').addClass('btn-primary');
+    $('#contactoBtn').prop('disabled', true);
+
+  });
+  
+  
+  
+  
+  $('#exampleModal').on('show.bs.modal', function(e){
+      console.log('El modal se esta mostrando');
+  });
+
+  $('#exampleModal').on('shown.bs.modal', function(e){
+      console.log('El modal se esta mostró');
+  });
+
+  $('#exampleModal').on('hide.bs.modal', function(e){
+      console.log('El modal se esta ocultando');
+  });
+
+  $('#exampleModal').on('hidden.bs.modal', function(e){
+      console.log('El modal se esta ocultó');
+      $('#contactoBtn').prop('disabled', false);
+  });
+
+
+
+
+});
 </script>
 
 
