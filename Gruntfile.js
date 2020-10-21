@@ -6,7 +6,7 @@ module.exports = function(grunt){
 
 // ================================================================================
 
-grunt.initConfig({
+    grunt.initConfig({
         sass: {
             dist: {
                 files: [{ 
@@ -57,7 +57,7 @@ grunt.initConfig({
                     src: 'img/*.{png,gif,jpg,jpeg}',
                     dest: 'dist/'
                 }]    
-            },  
+            }
         },
 
 // ================================================================================
@@ -68,19 +68,19 @@ grunt.initConfig({
                     expand: true,
                     dot: true,
                     cwd: './',
-                    src: '*.html}',
+                    src: '*.html',
                     dest: 'dist/'
                 }]    
-            },  
+            }
         },
 
 // ================================================================================
 
         clean:{
             build:{
-                src:[dist/]
+                src:['dist/']
             }
-        };
+        },
 
 // ================================================================================
 
@@ -120,14 +120,14 @@ grunt.initConfig({
         concat:{
             options:{
                 separator:';'
-            
+
                     },
             dist:{}
         },
 
 // ================================================================================
 
-        useminPrepare{
+        useminPrepare:{
             foo: {
                 dest:'dist',
                 src: ['index.html', 'nosotros.html', 'contacto.html', 'precios.html']
@@ -174,5 +174,16 @@ grunt.initConfig({
     grunt.registerTask('css', ['sass']);
     grunt.registerTask('default', ['browserSync', 'watch']);
     grunt.registerTask('img:compress', ['imagemin']);
+    grunt.registerTask('build', [
+        'clean',
+        'copy',
+        'imagemin',
+        'useminPrepare',
+        'concat',
+        'cssmin',
+        'uglify',
+        'filerev',
+        'usemin',
+         ])
 
 };
