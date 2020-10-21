@@ -1,4 +1,4 @@
-$VerdeHospital:#c8ece1;
+$VerdeHospital:#9be5aa;
 $TituloJumboColor:black;
 
 
@@ -10,7 +10,7 @@ $TituloJumboColor:black;
 .jumbotron{
     background-color: $VerdeHospital;
     color: $TituloJumboColor;   
-    @include Margenes (50px,0px)
+    @include Margenes (50px,0px);
     border-radius: 0;
     margin-bottom: 0;
 }
