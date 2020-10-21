@@ -170,10 +170,7 @@ grunt.initConfig({
 // ================================================================================
 
     //grunt.registerTask('default',['dev']);
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-browser-sync');
+ 
     grunt.registerTask('css', ['sass']);
     grunt.registerTask('default', ['browserSync', 'watch']);
     grunt.registerTask('img:compress', ['imagemin']);
