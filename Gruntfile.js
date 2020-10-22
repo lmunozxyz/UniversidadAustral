@@ -72,6 +72,19 @@ module.exports = function(grunt){
                     dest: 'dist/'
                 }]    
             }
+            fonts: {
+                files:[
+                    {
+                        //for iconic
+                        expand:true,
+                        dot: true,
+                        cwd:'node_modules/open-iconic/font',
+                        src: ['fonts/*.*'],
+                        dest:'dist'
+
+                    }
+                ]
+            }
         },
 
 // ================================================================================
@@ -183,7 +196,7 @@ module.exports = function(grunt){
         'cssmin',
         'uglify',
         'filerev',
-        'usemin',
+        'usemin'
          ])
 
 };
