@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/lmunozxyz/UniversidadAustral#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.13",
     "cssmin": "^0.4.3",
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^2.2.0",
@@ -41,6 +42,8 @@
     "grunt-filerev": "^2.3.1",
     "grunt-sass": "^3.1.0",
     "grunt-usemin": "^3.1.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "htmlmin": "0.0.7",
     "imagemin": "^7.0.1",
     "imagemin-cli": "^6.0.0",
@@ -68,6 +71,7 @@
     "optipng-bin": "^7.0.0",
     "pixrem": "^5.0.0",
     "popper.js": "^1.16.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "urix": "^0.1.0"
   }
 }
