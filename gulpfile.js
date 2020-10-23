@@ -10,11 +10,18 @@ var browserSync = require('browser-sync').create();
         done();
       });
 
-      gulp.task('sass:watch', done => {
-        gulp.watch('./css/*.scss/', ['sass']),
+     
+
+      gulp.task('sass:watch', function(done){
+
+        // added done above too
+    
+        gulp.watch('./css/*.scss', gulp.series('sass') )
         browserSync = require('browser-sync');
         done();
-      });
+    })
+
+
 
       gulp.task('browser-sync', done => {
         var files = ['./*.html','./css/*.css','./img/*.{png, jpg, gif}','./js/*.js'];
@@ -27,8 +34,5 @@ var browserSync = require('browser-sync').create();
         done();
       });
 
-
-
-
-    gulp.task('default', gulp.series(['sass', 'browser-sync']));
+   gulp.task('default', gulp.series(['sass', 'browser-sync', 'sass:watch']));
 
