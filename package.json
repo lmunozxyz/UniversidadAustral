@@ -73,6 +73,7 @@
     "jpegtran-bin": "^5.0.2",
     "jquery": "^3.5.1",
     "less": "^3.12.2",
+    "nvm": "0.0.4",
     "onchange": "^7.0.2",
     "open-iconic": "^1.1.1",
     "optipng": "^2.2.0",
